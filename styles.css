@@ -843,7 +843,116 @@ textarea {
         font-size: 2rem;
     }
 
+    .hero__desc {
+        font-size: 0.9375rem;
+    }
+
+    .section-title,
+    .concept__title,
+    .reservation__title,
+    .info__title {
+        font-size: 1.75rem;
+    }
+
     .btn {
         padding: 16px 32px;
+        min-height: 48px;
+    }
+
+    .nav__logo {
+        font-size: 1.25rem;
+    }
+
+    .nav {
+        height: 64px;
+    }
+
+    .menu-item {
+        padding: 16px 0;
+    }
+}
+
+/* ===== Small Mobile (< 480px) ===== */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero {
+        padding-top: 64px;
+    }
+
+    .hero__title {
+        font-size: 1.625rem;
+        word-break: keep-all;
+    }
+
+    .hero__label {
+        font-size: 0.6875rem;
+    }
+
+    .hero__desc {
+        font-size: 0.875rem;
+        word-break: keep-all;
+    }
+
+    .concept,
+    .menu,
+    .reservation,
+    .info {
+        padding: 60px 0;
+    }
+
+    .concept__image img {
+        height: 240px;
+    }
+
+    .concept__title {
+        font-size: 1.5rem;
+        word-break: keep-all;
+    }
+
+    .concept__desc {
+        font-size: 0.875rem;
+        word-break: keep-all;
+    }
+
+    .menu-card {
+        height: 240px;
+    }
+
+    .menu-card__name {
+        font-size: 1.125rem;
+    }
+
+    .reservation__form {
+        padding: 20px;
+    }
+
+    .reservation__form input,
+    .reservation__form select {
+        min-height: 48px;
+        font-size: 1rem;
+    }
+
+    .checkbox-label {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+    }
+
+    .btn--full {
+        min-height: 52px;
+        font-size: 1rem;
+    }
+
+    .info__map {
+        height: 240px;
     }
 }
