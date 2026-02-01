@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Art of Wok, The Taste of Fire - Authentic Chinese cuisine, freshly cooked to order.">
+    <title>Rock'n Wok | The Art of Wok</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">ROCK'N WOK</a>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item"><a href="#menu" class="nav__link">MENU</a></li>
+                <li class="nav__item"><a href="#info" class="nav__link">VISIT</a></li>
+                <li class="nav__item"><a href="#reservation" class="nav__link nav__link--cta">BOOK NOW</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link nav__link--lang">KO</a></li>
+            </ul>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero__video-container">
+            <video class="hero__video" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+                <source src="assets/cooking-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content container">
+            <span class="hero__label animate-fade-up">AUTHENTIC CHINESE DINING</span>
+            <h1 class="hero__title animate-fade-up delay-1">The Art of Wok,<br>The Taste of Fire</h1>
+            <p class="hero__desc animate-fade-up delay-2">Every dish, cooked to order — the essence of authentic Chinese cuisine</p>
+            <a href="#reservation" class="btn btn--primary hero__cta animate-fade-up delay-3">
+                Book a Table
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </a>
+        </div>
+        <div class="hero__scroll"><span>Scroll</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <section class="concept" id="concept">
+        <div class="container concept__grid">
+            <div class="concept__image">
+                <img src="assets/menbosha.png" alt="Wok cooking">
+            </div>
+            <div class="concept__content">
+                <span class="section-label">OUR PHILOSOPHY</span>
+                <h2 class="concept__title">Freshness,<br>Cooked to Order</h2>
+                <p class="concept__desc">Every dish begins the moment you order. No pre-made food. Only dishes freshly completed in a blazing hot wok make it to your table.</p>
+                <div class="concept__line"></div>
+                <blockquote class="concept__quote">"By focusing on fewer dishes,<br>we craft the finest flavors."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label">SIGNATURE MENU</span>
+                <h2 class="section-title">Our Signatures</h2>
+                <p class="section-desc">Curated selection of our finest dishes</p>
+            </header>
+            <div class="menu__featured">
+                <article class="menu-card">
+                    <div class="menu-card__image">
+                        <img src="assets/menbosha.png" alt="Menbosha" class="menu-card__img">
+                    </div>
+                    <div class="menu-card__overlay">
+                        <h3 class="menu-card__name">Menbosha</h3>
+                        <p class="menu-card__desc">Crispy shrimp toast</p>
+                    </div>
+                </article>
+                <article class="menu-card">
+                    <div class="menu-card__image">
+                        <img src="assets/mapo-tofu.png" alt="Mapo Tofu" class="menu-card__img">
+                    </div>
+                    <div class="menu-card__overlay">
+                        <h3 class="menu-card__name">Mapo Tofu</h3>
+                        <p class="menu-card__desc">Sichuan-style spicy tofu</p>
+                    </div>
+                </article>
+                <article class="menu-card">
+                    <div class="menu-card__image">
+                        <img src="assets/tangsuyuk.png" alt="Tangsuyuk" class="menu-card__img">
+                    </div>
+                    <div class="menu-card__overlay">
+                        <h3 class="menu-card__name">Tangsuyuk</h3>
+                        <p class="menu-card__desc">Crispy sweet & sour pork</p>
+                    </div>
+                </article>
+                <article class="menu-card">
+                    <div class="menu-card__image">
+                        <img src="assets/jjamppong.png" alt="Jjamppong" class="menu-card__img">
+                    </div>
+                    <div class="menu-card__overlay">
+                        <h3 class="menu-card__name">Jjamppong</h3>
+                        <p class="menu-card__desc">Spicy seafood noodle soup</p>
+                    </div>
+                </article>
+            </div>
+            <div class="menu__list">
+                <div class="menu-item">
+                    <span class="menu-item__name">Kkanpunggi</span>
+                    <span class="menu-item__price">$26</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item__name">Chili Shrimp</span>
+                    <span class="menu-item__price">$24</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item__name">Mala Xiangguo</span>
+                    <span class="menu-item__price">$25</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item__name">Fried Rice</span>
+                    <span class="menu-item__price">$10</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+        <div class="container reservation__grid">
+            <div class="reservation__info">
+                <span class="section-label">RESERVATION</span>
+                <h2 class="reservation__title">Book a Table</h2>
+                <p class="reservation__desc">Reserve your table online easily.<br>No phone calls needed — secure your spot instantly.</p>
+                <div class="reservation__line"></div>
+                <ul class="reservation__notes">
+                    <li>Up to 8 guests per reservation</li>
+                    <li>Break time: 3:00 PM ~ 5:00 PM</li>
+                    <li>No-show after 15 minutes past reservation time</li>
+                </ul>
+            </div>
+            <form class="reservation__form" id="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <select id="time" name="time" required>
+                            <option value="11:30">11:30 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="12:30">12:30 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="13:30">1:30 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="14:30">2:30 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="17:30">5:30 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="18:30" selected>6:30 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="19:30">7:30 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="20:30">8:30 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="party">Party Size</label>
+                        <select id="party" name="party" required>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4" selected>4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7">7 Guests</option>
+                            <option value="8">8 Guests</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="021-123-4567" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group form-group--checkbox">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="baby_chair">
+                        High chair needed
+                    </label>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">
+                    Confirm Reservation
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="info" id="info">
+        <div class="container info__grid">
+            <div class="info__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.5!2d176.1651719!3d-37.6907547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6ddbdb2a5e4d7f%3A0x980721265ebd6745!2sRock'n%20Wok!5e0!3m2!1sen!2snz!4v1706000000000!5m2!1sen!2snz"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="info__content">
+                <span class="section-label">VISIT US</span>
+                <h2 class="info__title">Find Us</h2>
+                <div class="info__block">
+                    <h3>Hours</h3>
+                    <p>Lunch  11:30 AM — 3:00 PM</p>
+                    <p>Dinner  5:00 PM — 10:00 PM</p>
+                    <p class="text-muted">Last Order  9:00 PM</p>
+                    <p class="text-muted">Break Time  3:00 PM — 5:00 PM</p>
+                </div>
+                <div class="info__block">
+                    <h3>Parking</h3>
+                    <p class="text-muted">Limited on-site parking.<br>Public parking available nearby.</p>
+                </div>
+                <div class="info__sns">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <a href="https://instagram.com" target="_blank">@rocknwok_official</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <span class="footer__logo">ROCK'N WOK</span>
+            <p class="footer__copy">&copy; 2026 Rock'n Wok. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">
+        <div class="toast__content"><span class="toast__message"></span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
