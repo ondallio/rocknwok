@@ -209,7 +209,10 @@ textarea {
 .hero__overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.55);
+    background:
+        linear-gradient(135deg, #0F0F0F 0%, #2A1A0E 35%, rgba(232, 99, 43, 0.19) 65%, #0F0F0F 100%),
+        rgba(0, 0, 0, 0.4);
+    background-blend-mode: normal;
 }
 
 .hero__content {
@@ -238,10 +241,20 @@ textarea {
     color: var(--color-cream);
 }
 
+.hero__title .accent {
+    color: var(--color-accent);
+}
+
 .hero__desc {
     font-size: 1.125rem;
     color: var(--color-gray);
     max-width: 600px;
+}
+
+.hero__divider {
+    width: 60px;
+    height: 2px;
+    background: var(--color-accent);
 }
 
 .hero__cta {
